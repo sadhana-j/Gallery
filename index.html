@@ -2,30 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="icons/sj-sq-refined.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artworks</title>
+    <meta name="description" content="Explore SJ's vibrant art gallery">
+    <meta name="keywords" content="art, gallery, paintings, sculptures, portraits, sketches">
+    <meta property="og:title" content="Art Gallery">
+    <meta property="og:description" content="Discover vibrant artworks by SJ">
+    <meta property="og:image" content="https://sadhana-j.github.io/Gallery/img/shiva.jpg">
+    <meta property="og:url" content="https://sadhana-j.github.io/Gallery/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Art Gallery">
+    <meta name="twitter:description" content="Discover vibrant artworks by SJ">
+    
+    <title>SJ'S Gallery</title>
     <link rel="stylesheet" href="main2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-
+    <script src="https://kit.fontawesome.com/709f23a34d.js" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ArtGallery",
+          "name": "SJ Art Gallery",
+          "description": "A collection of vibrant artworks by SJ",
+          "url": "https://sadhana-j.github.io/Gallery/"
+        }
+        </script>
 </head>
 <body>
+    <div id="loader" class="loader"></div>
     <header>
-        <h1>ARTWORKS</h1>
+        <img src="icons/sj-sq-refined.jpg" class="logo" alt="logo">
+        <h1>SJ's GALLERY</h1>
+        <nav class="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact-section" class="nav-link">Contact</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+        </nav>
+        <button class="hamburger">☰</button>
     </header>
-    <button id="theme-toggle">🌙</button>
+    <section class="hero" id="home">
+        <div class="hero-content">
+          <h2>Welcome to SJ's Art Gallery</h2>
+          <p>Discover vibrant artworks.</p>
+          <a href="#gallery" class="cta-button">Explore Gallery</a>
+        </div>
+      </section>
+    
+    <section id="about" class="about-section">
+        <h2>About</h2>
+        <div class="about-content">
+            <img src="icons/sj-sq-refined.jpg" alt="logo" class="about-image"> 
+            <p>Art has always been a part of me—a space where creativity meets clarity. As a self-taught portrait artist, I’ve spent countless hours refining every detail, finding joy in both the process and the patience it demands.
 
+                Beyond sketching, my passion for technology led me to web development, where I’ve taken my first steps into building digital experiences.         
+                For me, learning is an endless journey, and every skill I acquire is another tool to craft something meaningful.</p>
+                <p>You’re browsing a site I built myself.</p>
+                <p>-SJ</p>
+    </div> 
+    </section>
+<section id="gallery">
     <div class="swiper" >
         <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/shiva.jpg" alt="" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
-        <div class="swiper-slide"><img src="img/the_Granny.png" alt="" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
-        <div class="swiper-slide"><img src="img/Juno-the cheetah.jpg" alt="" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
-        <div class="swiper-slide"><img src="img/Euphony.png" alt="" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
-        <div class="swiper-slide"><img src="img/Vlad.png" alt="" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
-        <div class="swiper-slide"><img src="img/leon.png" alt="" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
-        <div class="swiper-slide"><img src="img/Levi.png" alt="" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>   
+        <div class="swiper-slide"><img src="img/the_Granny.png" alt="A Beautiful sketch of A Old Lady" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
+        <div class="swiper-slide"><img src="img/Juno-the cheetah.jpg" alt="A Beautiful sketch of  A leoprad" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
+        <div class="swiper-slide"><img src="img/shiva.jpg" alt="A Beautiful sketch of Lord Shiva" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
+        <div class="swiper-slide"><img src="img/Euphony.png" alt="A Beautiful sketch of a Violin" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
+        <div class="swiper-slide"><img src="img/Vlad.png" alt="A Beautiful sketch of a male Anime lead" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
+        <div class="swiper-slide"><img src="img/leon.png" alt="A Beautiful sketch of a male Anime lead" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>
+        <div class="swiper-slide"><img src="img/Levi.png" alt="A Beautiful sketch of Captain Levi From Attack on Titans" class="clickable-image" data-desc="description" onclick="openLightbox(this)"></div>   
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -33,20 +81,66 @@
     </div>
     <div class="gallery-container">
         <div class="gallery">
-            <img src="img/shiva.jpg" alt="Gallery Image" onclick="openLightbox(this)">
-            <img src="img/the_Granny.png" alt="Gallery Image" onclick="openLightbox(this)">
-            <img src="img/Juno-the cheetah.jpg" alt="Gallery Image" onclick="openLightbox(this)">
-            <img src="img/Euphony.png" alt="Gallery Image" onclick="openLightbox(this)">
-            <img src="img/Vlad.png" alt="Gallery Image" onclick="openLightbox(this)">
-            <img src="img/leon.png" alt="Gallery Image" onclick="openLightbox(this)">
-            <img src="img/Levi.png" alt="Gallery Image" onclick="openLightbox(this)">
+            <img src="img/the_Granny.png" alt="A Beautiful sketch of A Old Lady" onclick="openLightbox(this)">
+            <img src="img/Juno-the cheetah.jpg" alt="A Beautiful sketch of  A leopard" onclick="openLightbox(this)">
+            <img src="img/shiva.jpg" alt="A Beautiful sketch of Lord Shiva" onclick="openLightbox(this)">
+            <img src="img/Euphony.png" alt="A Beautiful sketch of a Violin" onclick="openLightbox(this)">
+            <img src="img/Vlad.png" alt="A Beautiful sketch of a male Anime lead" onclick="openLightbox(this)">
+            <img src="img/leon.png" alt="A Beautiful sketch of a male Anime lead" onclick="openLightbox(this)">
+            <img src="img/Levi.png" alt="A Beautiful sketch of Captain Levi From Attack on Titans" onclick="openLightbox(this)">
         </div>
     </div>
     <div id="lightbox" class="hidden">
-        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
-        <img src="img/shiva.jpg" alt="" id="lightbox-image">
+        <span class="close-lightbox" onclick="closeLightbox()">×</span>
+        <img id="lightbox-image" src="" alt="">
+        <button class="lightbox-nav prev" onclick="showPrevImage()">❮</button>
+<button class="lightbox-nav next" onclick="showNextImage()">❯</button>
+        
+      </div>
+    </section>
+    <section id="contact-section" class="contact-section">
+        <h2>Contact </h2>
+        <div class="contact-form">
+        <form action="https://formspree.io/f/mldlvldl" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" placeholder="Enter your Name here..." required></div>
+            <div class="form-group">
+                <label for="email"> Your Email </label>
+                <input type="email" name="email" placeholder="Enter your Email address here..." required></div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea name="message" placeholder="Share your thoughts..."  cols="30" rows="10"></textarea>
+            </div>
+                <button type="submit" class="cta-button">Send</button>
+        </form>
     </div>
+    </section>
+    <footer><p> SJ</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#gallery">Gallery</a>
+            <div class="social-links">
+            <a href="https://www.instagram.com/sj_artz23/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/mad_eye23"><i class="fa-solid fa-x"></i></a>
+            <a href="https://github.com/sadhana-j"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/sadhana23"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.com/users/1274676744649183234"><i class="fa-brands fa-discord"></i></a></div>
+    
+        </nav>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script defer src="script.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JDLFDR31K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9JDLFDR31K');
+</script>
 </body>
+
 </html>
